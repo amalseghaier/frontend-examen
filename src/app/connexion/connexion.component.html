@@ -1,0 +1,53 @@
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="../../assets/img/logo.jpg">
+                  <h4 class="mt-1 mb-5 pb-1">connecter</h4>
+                </div>
+
+                <form (ngSubmit)="connecter()">
+                  
+
+                  <div class="form-outline mb-4">
+                    <input type="text" id="cinInput" class="form-control" [(ngModel)]="cin" name="cin" maxlength="8" />
+                    <label class="form-label" for="cinInput">CIN</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="passwordInput" class="form-control" [(ngModel)]="password" name="password" />
+                    <label class="form-label" for="passwordInput">Mot de passe </label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">se connecter</button>
+                    <a class="text-muted" href="#!">Mot de passe oublié?</a>
+                  </div>
+                  <div *ngIf="errorMessage" class="error-message">
+                    {{ errorMessage }}
+                  </div>
+
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+               
+                <p class="small mb-0">Plateforme examen en ligne ISET Tozeur est un système de gestion d'examen complet qui permet aux établissements éducatifs de gérer et de mener des examens en ligne de manière efficace et sécurisée. Notre plateforme offre une expérience utilisateur intuitive et sécurisée pour les étudiants, les enseignants et les administrateurs. Nous nous engageons à fournir des solutions d'examen en ligne de qualité pour répondre aux besoins éducatifs actuels.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

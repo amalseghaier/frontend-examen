@@ -1,0 +1,14 @@
+<h2>Liste des examens disponibles </h2>
+<div class="container">
+  <div class="style">
+    <ul>
+      <li *ngFor="let examen of exams">
+        <p>Type : {{ examen.type }}</p>
+        <p>Nom : {{ examen.nom }}</p>
+        <p>Enseignant : {{ examen.enseignant }}</p>
+        <p>Date et heure : {{ examen.date_heure }}</p> 
+        <button (click)="passerExamen(examen)">Passer à l'examen</button>
+      </li>
+    </ul>
+  </div>
+</div>

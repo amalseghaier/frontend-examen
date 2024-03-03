@@ -1,0 +1,15 @@
+<!-- question.component.html -->
+<div class="container">
+  <h1>Question sur la Culture d'Entreprise</h1>
+  <p>{{ currentDateTime | date: 'medium' }}</p>
+  <div *ngFor="let question of questions; let i = index">
+    <p><strong>{{i + 1}}.</strong> {{ question.text }}</p>
+    <div *ngFor="let option of question.options">
+      <label>
+        <input type="radio" [(ngModel)]="answers[i]" [value]="option">
+        {{ option }}
+      </label>
+    </div>
+  </div>
+  <button (click)="submitAnswers()">valide</button>
+</div>

@@ -7,13 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-
+import { ConnexionComponent } from './connexion/connexion.component';
+import { DescriptionComponent } from './description/description.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { ExamenComponent } from './examen/examen.component';
 import { QuestionComponent } from './question/question.component';
 import { FormsModule } from '@angular/forms';
-import { ConnexionComponent } from './connexion/connexion.component';
-import { DescriptionComponent } from './description/description.component';
+
 
 
 @NgModule({
@@ -23,13 +23,12 @@ import { DescriptionComponent } from './description/description.component';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-
+    DescriptionComponent,
     EtudiantComponent,
     ExamenComponent,
     QuestionComponent,
-    ConnexionComponent,
-    DescriptionComponent,
-
+    ConnexionComponent
+   
   ],
   imports: [
     BrowserModule,
